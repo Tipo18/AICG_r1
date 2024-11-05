@@ -272,7 +272,7 @@ async function main() {
       let cspace = 2;
       let xrota = 45;
       let yrota = 45;
-      let zrota = 45; 
+      let zrota = 44; 
     
       // Get uniform locations for loop bounds
       const u_cspace = gl.getUniformLocation(program, "u_cspace");
