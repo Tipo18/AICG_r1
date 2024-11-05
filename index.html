@@ -1,0 +1,61 @@
+<!doctype html>
+
+<html>
+    <head>
+        <title>Ray Marching - Project v3</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../style.css" />
+    </head>
+    <body class="open-sans-normal">
+        <div>
+            <h3 class="open-sans-normal">IFT - AICG - Yliess HATI - Lecture 02 - Ray Marching</h3>
+            <h3 class="open-sans-bold">Project V3 - Timothée Darmaillacq</h3>
+        </div>
+        <ul style="display: flex; justify-content: space-between">
+            <li><a href="../projectv2/index.html">Pr v2</a></li>
+        </ul>
+
+        <div class="grid-container">
+            <button id="topBtn">↑</button>
+            <button id="bottomBtn">↓</button>
+            <button id="leftBtn">←</button>
+            <button id="rightBtn">→</button>
+            <button id="resetBtn">Reset</button>
+        </div>
+
+        <div>
+            <span id="xValue">X: 1</span>
+            <button id="incrementXBtn">X++</button>
+            <button id="resetXBtn">Reset X</button>
+            <span id="yValue">Y: 1</span>
+            <button id="incrementYBtn">Y++</button>
+            <button id="resetYBtn">Reset Y</button>
+            <span id="zValue">Z: 1</span>
+            <button id="incrementZBtn">Z++</button>
+            <button id="resetZBtn">Reset Z</button>
+        </div>
+        <div>
+            <span id="cspace">Space : 1</span> |
+            <span id="xrota">X rota : 1</span> |
+            <span id="yrota">Y rota: 1</span>  |
+            <span id="zrota">Z rota: 1</span>
+        </div>
+
+        <p style="text-align: center; font-size: 2rem" class="open-sans-bold">
+            <span id="fps">60</span> <span>FPS</span>
+        </p>
+        <div style="width: 100%">
+            <canvas
+                id="canvas"
+                width="800"
+                height="600"
+                style="width: 100%; margin: 0 auto"
+            ></canvas>
+        </div>
+
+        <script src="script.js" type="module"></script>
+        <script id="vert" src="shader.vert" type="x-shader/x-vertex"></script>
+        <script id="frag" src="shader.frag" type="x-shader/x-fragment"></script>
+    </body>
+</html>
